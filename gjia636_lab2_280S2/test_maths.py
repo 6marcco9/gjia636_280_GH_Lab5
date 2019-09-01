@@ -33,7 +33,9 @@ class MathsTest(unittest.TestCase):
         result1 = maths.convert_base(31,16)
         self.assertEqual("1F", result1, "fail the test")
 
-
+    def test_factorial(self):
+        result = maths.factorial(4)
+        self.assertEqual(24, result, "fail the test")
 # This allows running the unit tests from the command line (python test_maths.py)
 if __name__ == '__main__':
     unittest.main()
