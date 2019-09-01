@@ -43,4 +43,8 @@ def convert_base(num, n):
     except:
         return new_num_string
 
-def factorial(number):
+def factorial(num):
+    result = 1
+    for i in range(num, 0, -1):
+        result*=i
+    return result
